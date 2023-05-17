@@ -1,0 +1,25 @@
+$labtop: 1200px;
+$tablet: 1024px;
+$mobile: 640px;
+
+@mixin set-font($size, $weight) {
+    font-size: $size;
+}
+
+@mixin res--labtop {
+    @media screen and (max-width: $labtop) {
+        @content;
+    }
+}
+
+@mixin res--tablet {
+    @media screen and (max-width: $tablet) {
+        @content;
+    }
+}
+
+@mixin res--mobile {
+    @media screen and (max-width: $mobile) {
+        @content;
+    }
+}
